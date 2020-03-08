@@ -1,0 +1,1 @@
+This project is intended to practice basic HTML and CSS by creating a static Youtube page. 
