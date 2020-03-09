@@ -1,0 +1,180 @@
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    color: #fff;
+
+}
+
+
+
+body {
+    min-height: 100vh;
+}
+
+nav {
+   padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: #2C2C2C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+ 
+}
+
+#menu-btn {
+    margin-right: 30px;
+}
+
+#youtube-btn {
+    display: flex;
+    align-items: center;
+}
+
+#youtube-btn span {
+    color: white;
+    margin-left: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.search-bar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 4px;
+}
+
+#search {
+    margin-left: 2em;
+    width: 100%;
+    -webkit-appearance: none;
+    height: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 1px  #393939 solid;
+    background-color: #111111;
+
+}
+
+#search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 65px;
+    background-color: #393939;
+  
+
+}
+
+
+
+.user-options {
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.user-options .btn {
+    margin-right: 1em;
+}
+
+#login-btn {
+    height: 40px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    border: #3EA6FF 2px solid;
+}
+
+#login-btn span {
+    font-size: 1.2em;
+    color: #3EA6FF;
+}
+
+span {
+    color: white;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
+
+img {
+    height: 24px;
+    width: 24px;
+}
+
+main {
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    grid-template-areas:  
+    "video-container aside"
+    "comments aside";
+}
+
+.video-container {
+    grid-area: video-container;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.comments {
+    grid-area: comments;
+}
+
+
+@media only screen and (max-width: 630px) {
+
+    nav {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+
+    #menu-btn {
+        margin-right: 15px;
+    }
+
+
+    .search-bar {
+        width: 0%;
+        flex-grow: 0;
+        margin-right: 1em;
+       
+    }
+
+    #search {
+        width: 0%;
+        margin: 0;
+        visibility: hidden;
+    }
+
+    #search-btn  {
+        
+        background-color: #2C2C2C;
+    }
+
+
+  
+
+}
