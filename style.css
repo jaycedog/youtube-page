@@ -12,6 +12,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #1E1E1E;
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    
+    z-index: 99999;
  
 }
 
@@ -123,12 +124,168 @@ img {
 }
 
 main {
+    margin-top: 60px;
+    padding: 1em;
     display: grid;
     grid-template: auto 1fr / 2fr 1fr;
     grid-template-areas:  
     "video-container aside"
     "comments aside";
 }
+
+
+.autoplay-container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+
+
+#autoplay-header {
+    display: flex;
+    align-items: center;
+
+}
+
+#up-next {
+    flex: 1;
+    font-size: 1.2em;
+}
+
+#autoplay-text {
+    color: #aaa;
+    font-size: 1em;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 38px;
+    height: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(66, 66, 66);
+    margin-left: 10px;
+}
+
+.switch div {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3ea6ff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#autoplay-header {
+    margin-bottom: 10px;
+}
+
+.thumbnail-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.thumbnail-img {
+    position: relative;
+}
+
+.thumbnail {
+    display: block;
+    width: auto;
+    height: 94px;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    height: 100%;
+    padding-right: 0.5em;
+}
+
+.thumbnail-btn {
+    visibility: hidden;
+    margin-left: auto;
+    padding: 0.1em;
+    background-color: black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thumbnail-overlay:hover > .thumbnail-btn {
+    visibility: visible;
+} 
+
+
+
+
+.thumbnail-info {
+    position: relative;
+    margin-left: 10px;
+    padding-right: 1em;
+}
+
+.thumbnail-title {
+    font-size: 1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    width: auto;
+    margin: 0 4rem 0.1rem 0;
+}
+
+.channel-name {
+    display: flex;
+    align-items: center;
+
+}
+
+.thumbnail-info span {
+    color: #aaa;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+
+.channel-name img {
+    margin-left: 5px;
+    width: 14px;
+}
+
+.duration {
+   margin-left: auto;
+   background-color: black;
+   padding-left: 0.2em;
+   padding-right: 0.2em;
+   border-radius: 2px;
+
+}
+
+.thumbnail-info-overlay {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.thumbnail-container:hover > .thumbnail-info-overlay  {
+    visibility: visible;
+}
+
+
 
 .video-container {
     grid-area: video-container;
