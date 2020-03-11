@@ -118,7 +118,7 @@ span {
     outline:none;
 }
 
-img {
+.btn img {
     height: 24px;
     width: 24px;
 }
@@ -255,7 +255,7 @@ main {
 
 }
 
-.thumbnail-info span {
+ span {
     color: #aaa;
     font-size: 0.9em;
     white-space: nowrap;
@@ -266,6 +266,22 @@ main {
     margin-left: 5px;
     width: 14px;
 }
+
+
+.channel-stats {
+    margin-left: 10px;
+}
+
+.subscribe {
+    margin-left: auto;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #bd0000;
+}
+
+
 
 .duration {
    margin-left: auto;
@@ -303,7 +319,131 @@ main {
     height: 100%;
 }
 
+.video-info {
+    margin-top: 15px;
+}
 
+.video-info h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.video-primary-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+
+
+.video-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.5em;
+}
+
+.video-actions img {
+    height: 20px;
+    width: 20px;
+}
+
+.like-dislike {
+    display: flex;
+   
+}
+
+.video-actions .btn {
+    display: flex;
+    margin-right: 15px;
+}
+
+.video-actions img {
+    margin-right: 5px;
+}
+
+.more-info img {
+    margin-right: 0;
+    height: 24px;
+    width: 24px;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+.channel-logo img {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.video-details {
+    margin-top: 10px;
+}
+
+.video-description {
+    margin-top: 1em;
+    padding-left: 3.5em;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.category-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+}
+
+.category-box > .category {
+    height: 100px;
+    background-color: #161616;
+    width: 48%;
+    min-width: 200px;
+    display: flex;
+    
+    
+    
+}
+
+.category-box .general img {
+    border-radius: 50%;
+    height: 56px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.category-box .game img {
+    height: 100%;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1em;
+}
+
+.card-title {
+    color: white;
+    font-size: 1.1em;
+}
+
+.video span {
+    white-space: normal;
+}
+
+.show-more {
+    display: block;
+    margin: 2em 0;
+}
+
+a {
+    text-decoration: none;
+    
+}
 
 .video {
     grid-area: video;
