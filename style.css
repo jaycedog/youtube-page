@@ -440,6 +440,88 @@ main {
     margin: 2em 0;
 }
 
+.comments-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.comments-amount {
+    color: white;
+    font-size: 1.1em;
+}
+
+.comments-info .btn {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.comments-info .btn img {
+    margin-right: 5px;
+}
+
+.user-avatar {
+    margin-right: 10px;
+}
+
+.user-name {
+    color: white;
+
+}
+
+.comments-add {
+    display: flex;
+    margin-top: 20px;
+}
+
+.comments-input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+    padding-bottom: 0;
+    font-size: 1.1em;
+   align-self: flex-start;
+}
+
+.comments-user {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+
+.comment-data {
+    margin-bottom: 10px;
+
+}
+
+.comment-controls {
+    margin-top: 10px;
+    display: flex;
+}
+
+.comment-controls .btn {
+    display: flex;
+    margin-right: 15px;
+}
+
+
+.comment-controls img {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.user-avatar img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+
 a {
     text-decoration: none;
     
