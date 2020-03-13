@@ -127,7 +127,13 @@ main {
     margin-top: 60px;
     padding: 1em;
     display: grid;
-    grid-template: auto 1fr / 2fr 1fr;
+
+
+        grid-template-columns: minmax(500px, auto) 1fr;
+        grid-template-rows: repeat(2, 1fr);
+     
+
+
     grid-template-areas:  
     "video aside"
     "comments aside";
@@ -520,6 +526,15 @@ main {
     border-radius: 50%;
 }
 
+.views-date {
+    display: flex;
+   align-items: center;
+    padding-bottom: 0.5em;
+}
+
+.date {
+    margin-left: 5px;
+}
 
 
 a {
@@ -540,7 +555,7 @@ aside {
 }
 
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 1000px) {
 
     nav {
         padding-left: 1em;
@@ -571,7 +586,45 @@ aside {
         background-color: #2C2C2C;
     }
 
+    main {
 
   
 
+        column-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:  
+        "video"
+        "aside"
+        "comments";
+        
+    }
+
+    .video-container {
+        width: 90%;
+        padding-bottom: 50.625%;
+        margin: 0 auto;
+        
+    }
+
+    .related {
+        margin-top: 10px;
+    }
+
+    .category-box > .category { 
+        margin-top: 20px;
+        width: 70%;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .date {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
 }
